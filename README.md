@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>webpage design</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PROGRAMS</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" >HOME</a></li>
+                    <li><a href="#" >ABOUT</a></li>
+                    <li><a href="#" >SERVICE</a></li>
+                    <li><a href="#" >DESIGN</a></li>
+                    <li><a href="#" >CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="srch" placeholder="type to search ">
+                <a href="#">
+                    <button class="butn"> Search </button>
+                </a>
+            </div>
+            <div class="content">
+                <h1>WEB DESIGN & <br><span>DEVELOPEMENT</span><br>COURSE</h1>
+                <p class="par">HTML was created by Sir Tim Berners-Lee in late 1991 but was not released officially,<br> published in 1995 as HTML 2.0.
+                    HTML 4.01 was published in late 1999 and was a major <br>version of HTML. HTML 1.0 was released in 1993 with the intention of sharing 
+                    information <br> can be readable and accessible via web browsers.</p>
+                <button class="join"><a href="#" >Join Us</a></button>
+            </div>
+            <div class="form">
+                <h1>Login Here</h1><br><br>
+                <i class="fas fa-user-circle"></i>
+                <input type="text" name="username" placeholder="Username">
+                <br><br>
+                <i class="fas fa-key"></i>
+                <input type="password" name="password" placeholder="Password"id="hide0">
+                <span class="eye" onclick="myfunction()">
+                    <i id="hide1" class="fas fa-eye"></i>
+                    <i id="hide2" class="fas fa-eye-slash"></i>
+                </span><br><br>
+                <button >login </button><br><br>
+                <p>Don't have an account?</p>
+                <a href="#" >Sign up </a>here<br><br>
+                <p1>login in with</p1><br><br>
+                <div class="icon">
+                    <a href="#" ><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" ><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" ><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" ><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#" ><ion-icon name="logo-skype"></ion-icon></a>
+                    <a href="#" ><ion-icon name="logo-whatsapp"></ion-icon></a>
+
+                </div>
+
+            </div> 
+            
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" ></script>
+    <script >
+        function myfunction(){
+            var x =document.getElementById("hide0");
+            var y =document.getElementById("hide1");
+            var z =document.getElementById("hide2");
+
+            if(x.type==='password'){
+                x.type="text"
+                y.style.display="block"
+                z.style.display="none"
+            }
+            else{
+                x.type="password"
+                y.style.display="none"
+                z.style.display="block"
+            }
+        }
+    </script>
+    
+</body>
+</html>
+-----------------------------------------------------
 *{
     margin: 0;
     padding: 0;
@@ -83,14 +172,15 @@ ul li a:hover{
     font-size: 14px;
     margin-top: 40px;
     margin-left: 80px;
-    color: white;
-    border: 1px solid black;
+    color:black;
+    border: 1px solid white;
+    font-weight: 100;
 }
 .content span{
     color: tomato;
 }
 .form{
-    width: 300px;
+    width: 320px;
     height: 350px;
     left: 950px;
     top: 220px;
@@ -114,7 +204,9 @@ ul li a:hover{
     border-left:none ;
     background: transparent;
     color: white;
-    width: 250px;
+    width: 230px;
+    margin-left: 5px;
+    
 }
 .form button{
     background: tomato;
@@ -143,66 +235,17 @@ ul li a:hover{
 .form a:hover{
     color: tomato;
 }
----------------------------------------------------------
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>webpage design</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">PROGRAMS</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#" >HOME</a></li>
-                    <li><a href="#" >ABOUT</a></li>
-                    <li><a href="#" >SERVICE</a></li>
-                    <li><a href="#" >DESIGN</a></li>
-                    <li><a href="#" >CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <input type="text" class="srch">
-                <a href="#">
-                    <button class="butn"> SEARCH </button>
-                </a>
-            </div>
-            <div class="content">
-                <h1>WEB DESIGN & <br><span>DEVELOPEMENT</span><br>COURSE</h1>
-                <p class="par">HTML was created by Sir Tim Berners-Lee in late 1991 but was not released officially,<br> published in 1995 as HTML 2.0.
-                    HTML 4.01 was published in late 1999 and was a major <br>version of HTML. HTML 1.0 was released in 1993 with the intention of sharing 
-                    information <br> can be readable and accessible via web browsers.</p>
-                <button class="join"><a href="#" >JOIN US</a></button>
-            </div>
-            <div class="form">
-                <h1>Login Here</h1><br><br>
-                <input type="text "  name="username" placeholder="Username"><br><br>
-                <input type="password" name="password" placeholder="Password"><br><br>
-                <button >login </button><br><br>
-                <p>Don't have an account?</p>
-                <a href="#" >Sign up </a>here<br><br>
-                <p1>login in with</p1><br><br>
-                <div class="icon">
-                    <a href="#" ><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#" ><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#" ><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#" ><ion-icon name="logo-google"></ion-icon></a>
-                    <a href="#" ><ion-icon name="logo-skype"></ion-icon></a>
-
-                </div>
-
-            </div> 
-            
-            
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" ></script>
-    
-</body>
-</html>
----------------------------------------------------------
+.form ::placeholder{
+    color: white;
+}
+.search ::placeholder{
+    color: white;
+}
+.eye{
+    position: absolute;
+}
+#hide1{
+    display: none;
+}
+---------------------------------------------------------------------
 https://unpkg.com/ionicons@5.4.0/dist/ionicons.js
